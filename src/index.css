@@ -5,6 +5,10 @@
 :root {
   --foreground-rgb: 31, 41, 55;
   --background-rgb: 249, 250, 251;
+  --primary-color: #0066FF;
+  --primary-dark-color: #0052CC;
+  --secondary-color: #00C2FF;
+  --accent-color: #FF6B00;
 }
 
 body {
@@ -15,11 +19,11 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition-colors;
+    @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors font-medium;
   }
   
   .btn-secondary {
-    @apply bg-secondary text-white px-4 py-2 rounded-md hover:bg-secondary/90 transition-colors;
+    @apply bg-secondary text-white px-4 py-2 rounded-md hover:bg-secondary/90 transition-colors font-medium;
   }
   
   .container-custom {
