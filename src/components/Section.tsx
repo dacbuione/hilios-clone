@@ -1,8 +1,8 @@
-import React from 'react'
+import { ReactNode } from 'react'
 import Container from './Container'
 
 interface SectionProps {
-  children: React.ReactNode
+  children: ReactNode
   className?: string
   background?: 'white' | 'light' | 'primary' | 'dark'
   withContainer?: boolean

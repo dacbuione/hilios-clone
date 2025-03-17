@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Contact() {
   return (
     <div className="min-h-[70vh] py-20">

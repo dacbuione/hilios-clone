@@ -1,9 +1,9 @@
-import React from 'react'
+import { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import Loading from './Loading'
 
 interface ButtonProps {
-  children: React.ReactNode
+  children: ReactNode
   variant?: 'primary' | 'secondary' | 'outline' | 'text'
   size?: 'small' | 'medium' | 'large'
   href?: string

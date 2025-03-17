@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface LoadingProps {
   size?: 'small' | 'medium' | 'large'
   color?: 'primary' | 'white'
