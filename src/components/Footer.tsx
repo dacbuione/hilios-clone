@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -16,17 +16,17 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/features" className="text-gray-300 hover:text-white">
+                <Link to="/features" className="text-gray-300 hover:text-white">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-300 hover:text-white">
+                <Link to="/pricing" className="text-gray-300 hover:text-white">
                   Pricing
                 </Link>
               </li>
@@ -37,17 +37,17 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/blog" className="text-gray-300 hover:text-white">
+                <Link to="/blog" className="text-gray-300 hover:text-white">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/docs" className="text-gray-300 hover:text-white">
+                <Link to="/docs" className="text-gray-300 hover:text-white">
                   Documentation
                 </Link>
               </li>
               <li>
-                <Link href="/support" className="text-gray-300 hover:text-white">
+                <Link to="/support" className="text-gray-300 hover:text-white">
                   Support
                 </Link>
               </li>

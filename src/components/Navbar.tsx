@@ -1,7 +1,5 @@
-'use client'
-
 import { useState } from 'react'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,23 +9,23 @@ export default function Navbar() {
       <div className="container-custom py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary">
+            <Link to="/" className="text-2xl font-bold text-primary">
               Hilios
             </Link>
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-600 hover:text-primary">
+            <Link to="/" className="text-gray-600 hover:text-primary">
               Home
             </Link>
-            <Link href="/features" className="text-gray-600 hover:text-primary">
+            <Link to="/features" className="text-gray-600 hover:text-primary">
               Features
             </Link>
-            <Link href="/pricing" className="text-gray-600 hover:text-primary">
+            <Link to="/pricing" className="text-gray-600 hover:text-primary">
               Pricing
             </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-primary">
+            <Link to="/contact" className="text-gray-600 hover:text-primary">
               Contact
             </Link>
           </div>
@@ -69,16 +67,16 @@ export default function Navbar() {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <Link href="/" className="block text-gray-600 hover:text-primary">
+            <Link to="/" className="block text-gray-600 hover:text-primary">
               Home
             </Link>
-            <Link href="/features" className="block text-gray-600 hover:text-primary">
+            <Link to="/features" className="block text-gray-600 hover:text-primary">
               Features
             </Link>
-            <Link href="/pricing" className="block text-gray-600 hover:text-primary">
+            <Link to="/pricing" className="block text-gray-600 hover:text-primary">
               Pricing
             </Link>
-            <Link href="/contact" className="block text-gray-600 hover:text-primary">
+            <Link to="/contact" className="block text-gray-600 hover:text-primary">
               Contact
             </Link>
           </div>
